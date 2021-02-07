@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Nav bar */
+
+.navBar{
+    /* background-color: rgb(59, 46, 141); */
+    background-color:rgb(209, 66, 14);
+    font-size: 33px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 5px 4px 8px #888888;
+    padding-bottom: 15px;
+    /* display: flex; */
+    position: relative;
+
+}
+
+.navBar a{
+    color: whitesmoke;
+    /* padding-left: 30px;
+    padding-bottom: 30px; */
+    /* padding:14px 16px; */
+    padding-left: 40px;
+
+    text-decoration: none;
+    text-align: center;
+    border-right: 2px whitesmoke;
+}
+
+.navBar a:last-child{
+    padding-right: 60px;
+    /* position: absolute;
+    right: 3%; */
+}
+
+#logo{
+    color: white;
+}
+
+.navBar a:first-child{
+   float: left;
+   font-weight: bold;
+   position: absolute;
+   top: 8%;
+   left:3%;
+   cursor: pointer;
+}
+
+.navBar a:hover{
+    color: black;
+}
+
+/* Home component */
