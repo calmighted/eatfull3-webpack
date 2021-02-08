@@ -1,10 +1,9 @@
 let body = document.querySelector('body');
 
 const createAbout = () =>{
-    let about = document.createElement("h1");
+    let about = document.createElement("div");
     about.innerText = "About";
     body.appendChild(about);
-    console.log("About")
 }
 
 export default createAbout;

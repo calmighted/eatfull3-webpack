@@ -6,7 +6,7 @@ import createMenu from '../components/menu/menu'
 
 // console.log("Its working yay!")
 
-
+let body = document.querySelector('body');
 
 let container = document.querySelector("#content");
 
@@ -41,9 +41,30 @@ navElement.appendChild(menuLink);
 container.appendChild(navElement);
 
 
-aboutLink.addEventListener('click',createAbout);
-logo.addEventListener('click',createHome);
-homeLink.addEventListener('click',createHome);
-menuLink.addEventListener('click',createMenu);
+
+const createAboutPage = () => {
+    body.removeChild(body.lastChild);
+    createAbout();
+    // aboutLink.classList.add('active1');
+}
+const createHomePage = () => {
+    body.removeChild(body.lastChild);
+    createHome();
+}
+const createMenuPage = () => {
+    body.removeChild(body.lastChild);
+    createMenu();
+}
+
+
+
+
+
+aboutLink.addEventListener('click',createAboutPage);
+
+
+logo.addEventListener('click',createHomePage);
+homeLink.addEventListener('click',createHomePage);
+menuLink.addEventListener('click',createMenuPage);
 
 // createHome();
