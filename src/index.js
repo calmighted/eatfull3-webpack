@@ -2,21 +2,14 @@ import createHome from '../components/home/home'
 import createAbout from '../components/about/about'
 import createMenu from '../components/menu/menu'
 
-// import "./index.css"
-
-// console.log("Its working yay!")
 
 let body = document.querySelector('body');
 
 let container = document.querySelector("#content");
 
 let navElement = document.createElement('div');
-//  navElement += "<a class= 'active' href='#home'>Home</a> ";
-//  navElement += "<a href='#menu'>Menu</a> ";
-//  navElement += "<a href='#about'>About</a> ";
-//  navElement.style.backgroundColor = 'red';
  navElement.classList.add("navBar")
-//  navElement.textContent = "This is nav bar";
+
 
 let logo = document.createElement('a');
 logo.innerText = "🌮 EatFull"
@@ -43,7 +36,6 @@ container.appendChild(navElement);
 
 const currentContainer = () => {
     container = document.querySelector('.container');
-    console.log(container);
 }
 
 
@@ -52,7 +44,7 @@ const createAboutPage = () => {
     currentContainer();
     body.removeChild(container);
     createAbout();
-    // aboutLink.classList.add('active1');
+
 }
 const createHomePage = () => {
     currentContainer();
@@ -74,9 +66,14 @@ logo.addEventListener('click',createHomePage);
 homeLink.addEventListener('click',createHomePage);
 menuLink.addEventListener('click',createMenuPage);
 
-createHome();
-// currentContainer();
 
-//todo
-//makeing pages more dynamic
-//making individual pages
+let footer = document.createElement('div');
+footer.classList.add('footer');
+
+footer.innerHTML = '<p>Footer</p>'
+
+container.appendChild(footer);
+
+createHome();
+
+
