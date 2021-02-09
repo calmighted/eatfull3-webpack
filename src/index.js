@@ -41,30 +41,42 @@ navElement.appendChild(menuLink);
 container.appendChild(navElement);
 
 
+const currentContainer = () => {
+    container = document.querySelector('.container');
+    console.log(container);
+}
+
+
 
 const createAboutPage = () => {
-    body.removeChild(body.lastChild);
+    currentContainer();
+    body.removeChild(container);
     createAbout();
     // aboutLink.classList.add('active1');
 }
 const createHomePage = () => {
-    body.removeChild(body.lastChild);
+    currentContainer();
+    body.removeChild(container);
     createHome();
 }
 const createMenuPage = () => {
-    body.removeChild(body.lastChild);
+    currentContainer();
+    body.removeChild(container);
     createMenu();
 }
 
-
-
-
-
 aboutLink.addEventListener('click',createAboutPage);
+
+
 
 
 logo.addEventListener('click',createHomePage);
 homeLink.addEventListener('click',createHomePage);
 menuLink.addEventListener('click',createMenuPage);
 
-// createHome();
+createHome();
+// currentContainer();
+
+//todo
+//makeing pages more dynamic
+//making individual pages
