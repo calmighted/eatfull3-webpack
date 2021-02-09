@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif
+}
+
+/* Nav bar */
+
+.navBar{
+    /* background-color: rgb(59, 46, 141); */
+    background-color:rgb(209, 66, 14);
+    font-size: 30px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 5px 4px 8px #888888;
+    padding-bottom: 15px;
+    /* display: flex; */
+    position: relative;
+
+}
+
+.navBar a{
+    color: whitesmoke;
+    /* padding-left: 30px;
+    padding-bottom: 30px; */
+    /* padding:14px 16px; */
+    padding-left: 40px;
+
+    text-decoration: none;
+    /* text-align: center; */
+    border-right:  2px solid white;
+    /* border-bottom:  2px solid white; */
+    padding-right: 25px;
+    /* border-radius: 8px; */
+}
+
+.navBar a:last-child{
+    padding-right: 60px;
+    /* border-bottom: 2px solid white; */
+    border-right: none;
+    /* margin-top: 14px; */
+    /* position: absolute;
+    right: 3%; */
+}
+
+#logo{
+    color: white;
+    border: none;
+    font-family: 'Redressed', cursive;
+    font-size: 34px;
+}
+
+.navBar a:first-child{
+   float: left;
+   font-weight: bold;
+   position: absolute;
+   top: 17%;
+   left:3%;
+   cursor: pointer;
+}
+
+.navBar a:hover{
+    color: black;
+    /* background-color: aqua; */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+/* Home component */
+
+.home,.about,.menu{
+    background-color: lightyellow;
+    width: 100%;
+    height: 100vh;
+    position: absolute
+}
+
+
+.home h1{
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+.home button{
+    height: 40px;
+    width: 160px;
+    border-radius: 9px;
+    border:2px solid black;
+    margin: 4px;
+    background-color: rgb(209, 66, 14);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 29%;
+    left: 40%;
+}
+
+.home button:hover{
+    background-color: orangered;
+}
+
+/* about component */
+
+.about h1{
+    text-align: center;
+    position: relative;
+    top: 4%;
+}
+
+.about p {
+    text-align: center;
+    width: 40%;
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
+
+
+/* menu component */
+
+.menu h1{
+    text-align: center;
+    position: relative;
+    top: 6%;
+}
+
+.menu p {
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
